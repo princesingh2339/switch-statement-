@@ -1,0 +1,547 @@
+1)write a program to read a week day number and print weekday name using switch 
+eg 1 =>sunday 
+1 sunday 
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args ){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("enter a number :");
+        int a = dc.nextInt();
+
+        switch (a) {
+            case 1:{
+                System.out.println("Sunday");
+                break;
+
+            }
+            case 2:{
+                System.out.println("Moday");
+                break;
+
+            }
+            case 3:{
+                System.out.println("Tuesday");
+                break;
+
+            }
+            case 4:{
+                System.out.println("Wednesday");
+                break;
+
+            }
+            case 5:{
+                System.out.println("thusday");
+                break;
+
+            }
+            case 6:{
+                System.out.println("Friday");
+                break;
+
+            }
+            case 7:{
+                System.out.println("Saturday");
+                break;
+
+            }
+                
+                
+        
+            default:{
+                System.out.println("not a week day");
+
+                break;
+
+            }
+        }
+    }
+}
+-----------------------------------------------------------------------
+2) 
+write a program to read gender (M/F) and print the corresponding gender using a switch statement 
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args ){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("enter a number :");
+        char a = dc.next().charAt(0);
+
+        switch (a) {
+            case 'm':{
+                System.out.println("Male");
+                break;
+
+            }
+
+            case 'f':{
+                System.out.println("female");
+                break;
+
+            }
+                
+                
+        
+            default:{
+                System.out.println("Enter small Charater");
+                break;
+            }
+                
+        }
+
+
+        }
+    }
+
+--------------------------------------------------------------------------
+3)
+write a program to check whether the number is even or odd 
+type1: 1 even number 
+2 :odd number 
+
+type2: e =>even number 
+o=>odd number 
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args ){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("enter type1 or type 2:");
+        String type1 = dc.nextLine();
+
+        if(type1.equals("type1")){
+            System.out.println("enter number 1 or 2:");
+            int a = dc.nextInt();
+
+            switch (a) {
+                case 1:{
+                    System.out.println("even number");
+                    break;
+                }
+                case 2:{
+                    System.out.println("odd number");
+                    break;
+                }
+                    
+            
+                default:{
+                    System.out.println("enter 1 or 2");
+                    break;
+                    
+                }
+                    
+            }
+        }
+        else if (type1.equals("type2")){
+            System.out.println("enter charater e or o:");
+            char a = dc.next().charAt(0);
+
+            switch (a) {
+                case 'e':{
+                    System.out.println("Even number");
+                    break;
+
+                }
+                case 'o':{
+                    System.out.println("odd number");
+                    break;
+                }
+                    
+                    
+            
+                default:{
+                    System.out.println("enter only e and o charater");
+                }
+                    break;
+            }
+
+            
+        }
+
+
+        }
+    }
+
+--------------------------------------------------------------------------------------------------
+4) 
+write a program to create a simple calculator 
+a b + 
+a+b 
+
+
+-----------------------------------------------------------------------------
+5) 
+write a program to check whether a person is eligible or not for vote 
+
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args ){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("enter age:");
+        int age = dc.nextInt();
+
+        if(age >= 18 ){
+            System.out.println("Age is Vaild for vote");
+
+        }
+        else {
+            System.out.println("Age is not vaild for vote");
+        }
+
+        
+
+
+        }
+    }
+
+----------------------------------------------------------------------------------------------------
+6)
+write a program to check month ? 
+12 month 
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args ){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("enter number:");
+        int a = dc.nextInt();
+
+        switch(a){
+            case 1:{
+                System.out.println("jan");
+                break;
+            }
+            case 2:{
+                System.out.println("fev");
+                break;
+            }
+            case 3:{
+                System.out.println("march");
+                break;
+
+            }
+            case 4:{
+                System.out.println("april");
+                break;
+
+            }
+            case 5:{
+                System.out.println("may");
+                break;
+
+            }
+            case 6:{
+                System.out.println("june");
+                break;
+
+            }
+            case 7:{
+                System.out.println("jan");
+                break;
+
+            }
+            case 8:{
+                System.out.println("july");
+                break;
+
+            }
+            case 9:{
+                System.out.println("aug");
+                break;
+
+            }
+            case 10:{
+                System.out.println("sept");
+                break;
+
+            }
+            case 11:{
+                System.out.println("nov");
+                break;
+
+            }
+            case 12:{
+                System.out.println("dec");
+                break;
+
+            }
+            default:{
+                System.out.println("not a month");
+                break;
+            }
+        }
+
+        
+
+
+        }
+    }
+
+
+
+--------------------------------------------------------------------------------------------------
+7)
+a p e o f r l 
+a=armstrong number 
+p =prime number 
+e =even 
+o =odd 
+f =factorial 
+r =reverse 
+l =fibonacci 
+t =perfect number 
+n =neon number 
+w =leap year 
+s =swap one way 
+v =vowel and consonant 
+
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args ){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("enter any Charater:");
+        char ch = dc.next().charAt(0);
+
+        switch (ch) {
+            case 'a':{
+
+                System.out.println("Enter a number :");
+                int num = dc.nextInt();
+
+                int rem,sum=0;
+                int temp=num;
+
+                while(num>0){
+                    rem=num%10;
+                    sum=sum+rem*rem*rem;
+                    num=num/10;
+                }
+                if(temp == sum){
+                    System.out.println(sum+ "armstrong number");
+                }
+                else {
+                    System.out.println("not a armstrong");
+                }
+
+                break;
+
+            }
+
+            case 'p':{
+                System.out.println("Enter a number :");
+                int a = dc.nextInt();
+
+                int i =2;
+
+                while(a>0){
+                    if(a%i==0){
+                        break;
+                    }
+                    if(i==a-1){
+                        System.out.println("prime number ");
+                    }
+                    i++;
+                }
+                break;
+
+            }
+
+            case 'e':{
+                System.out.println("Enter sp number :");
+                int sp = dc.nextInt();
+
+                System.out.println("Enter ep number :");
+                int ep = dc.nextInt();
+
+                for(int i=sp; i<=ep;i++){
+                    if(i%2==0){
+                        System.out.println(i);
+                    }
+                    
+                }
+                break;
+
+            }
+
+            case 'o':{
+                System.out.println("Enter sp number :");
+                int sp = dc.nextInt();
+
+                System.out.println("Enter ep number :");
+                int ep = dc.nextInt();
+
+                for(int i=sp; i<=ep;i++){
+                    if(i%2!=0){
+                        System.out.println(i);
+                    }
+                    
+                }
+                break;
+
+            }
+
+            case 'f':{
+                int fact = 1;
+                System.out.println("Enter a number :");
+                int a = dc.nextInt();
+                
+                for(int i =1; i<=a;i++){
+                    fact = fact*i;
+                }
+                System.out.println(fact);
+            }
+
+            case 'r':{
+                
+                System.out.println("Enter a number :");
+                int num = dc.nextInt();
+
+                int rem,sum=0;
+
+                while(num>0){
+                    rem=num%10;
+                    sum=sum*10+rem;
+                    num=num/10;
+                }
+                System.out.println("reverse value is :"+sum);
+            }
+
+            case 'l':{
+                
+                System.out.println("Enter a number :");
+                int num = dc.nextInt();
+
+                int n1=0;
+                int n2=1;
+                int n3;
+
+                for(int i=1;i<=num;i++){
+                    n3=n1+n2;
+                    n1=n2;
+                    n2=n3;
+                    System.out.println(n3);
+                }
+
+                
+            }
+
+            case 't':{
+                System.out.println("Enter a number :");
+                int num = dc.nextInt();
+
+                int sum=0;
+
+                if(num>0){
+                    for(int i =1 ;i<num;i++){
+                        if(num%i==0){
+                            sum=sum+i;
+                        }
+                    }
+                    System.out.println(sum+"is a perfect number");
+                }
+
+
+            }
+
+            case 'n':{
+                System.out.println("Enter a number :");
+                int num = dc.nextInt();
+
+                int sq = num*num;
+                int rem,sum=0;
+
+                while(sq>0){
+                    rem=sq%10;
+                    sum=sum+rem;
+                    sq=sq/10;
+
+                }
+
+                if(sum == num){
+                    System.out.println(num +" is a neon number");
+                }
+                else {
+                    System.out.println(num+"not a neon number");
+                }
+                
+            }
+
+            case 'w':{
+                System.out.println("Enter Year :");
+                int year = dc.nextInt();
+                if(year %4 == 0){
+                    if(year % 100 == 0){
+                        if(year %400 == 0){
+                            System.out.println("Leap Year" + year);
+                        }
+                        else{
+                            System.out.println("not a Leap Year");
+                        }
+                    }
+                    else {
+                        System.out.println("not a leap Year");
+                    }
+                }
+                else {
+                    System.out.println("not a leap Year");
+                }
+        
+                
+            }
+
+            case 's':{
+                System.out.println("Enter a value :");
+                int a = dc.nextInt();
+
+                System.out.println("Enter b value :");
+                int b = dc.nextInt();
+
+                a=a+b;
+                b=a-b;
+                a=a-b;
+
+                System.out.println("Swap value of a : "+ a);
+                System.out.println("Swap value of b : "+ b);
+                
+            }
+
+            case 'v':{
+                System.out.println("enter a charater :");
+                char ch1 = dc.next().charAt(0);
+
+                if( ch1 == 'a' || ch1 =='e'|| ch1=='i' || ch1 == 'o' || ch1=='u'){
+                    System.out.println("vowel");
+                }
+                else {
+                    System.out.println("consonant");
+
+                }
+
+
+            }
+                
+                
+        
+            default:
+                break;
+        }
+
+
+
+        }
+    }
